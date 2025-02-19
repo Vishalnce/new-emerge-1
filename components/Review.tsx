@@ -49,14 +49,14 @@ const Review = () => {
 
         {/* cards */}
 
-        <div className="flex flex-row max-md:flex-col justify-around items-center mx-auto  py-4 h-auto bg-[#FFFAED]">
+        <div className="flex flex-row max-md:flex-col justify-around items-center mx-auto  py-4 h-auto ">
           {info.map((item) => (
             <div
-              className="flex flex-col border-2 rounded-lg w-[25%] h-[80%] max-md:w-[80%] shadow-lg hover:shadow-2xl hover:border-white group m-3"
+              className="flex flex-col   w-[25%] h-[80%] max-md:w-[80%] shadow-lg hover:shadow-2xl  group rounded-b-2xl m-3"
               key={item.name}
             >
               {/* Top section */}
-              <div className="flex flex-col  items-center bg-[#5083C1B2] group-hover:bg-[#5083C1] h-[40%] transition-colors duration-300">
+              <div className="flex flex-col  items-center bg-[#5083C1B2] group-hover:bg-[#5083C1] h-[40%] transition-colors duration-300 rounded-t-2xl ">
                 <div className="w-[28%] m-2 flex justify-center">
                   <img src={item.path} />
                 </div>
@@ -69,7 +69,7 @@ const Review = () => {
               </div>
 
               {/* Review section */}
-              <div className=" mx-auto  transition-colors duration-300 bg-white">
+              <div className=" mx-auto  transition-colors duration-300 bg-white rounded-b-2xl ">
                 <p className="text-center text m-2 text-gray-500 w-[80%] mx-auto ">
                   {item.review}
                 </p>
