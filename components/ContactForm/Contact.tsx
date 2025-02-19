@@ -67,7 +67,7 @@ function Form() {
 
   return (
     <>
-      <div className="relative max-md:mb-[42px]  w-[50%]  max-md:w-[100%] ">
+      <div className="relative max-md:mb-[42px]  w-[50%]  max-md:w-[100%] flex flex-col justify-center items-center ">
         
         <form
           onSubmit={handleSubmit(submit)}
@@ -105,11 +105,12 @@ function Form() {
         </form>
 
         {/* Display the success message after submission */}
-        {isSubmitted && (
-          <div className="text-center  top-[21rem] left-[4rem] absolute text-black border-2 rounded-full p-3 mt-4 ml-2 max-md:text-[13px]">
+        
+        {isSubmitted && (<div className="text-center   left-[4rem]  text-black border-2 rounded-full py-2 px-4 mt-4 ml-2 max-md:text-[13px]">
             Your message has been sent
-          </div>
-        )}
+          </div>)}
+          
+        
       </div>
     </>
   );
