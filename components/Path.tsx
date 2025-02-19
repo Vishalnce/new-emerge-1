@@ -55,7 +55,7 @@ const Path = () => {
       
       gsap.to(".text-animated", {
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
         ease: "power2.inOut",
         onComplete: () => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % info.length);
@@ -67,7 +67,7 @@ const Path = () => {
       gsap.to(".border-animated", {
         borderBottomWidth: "3px",
         
-        duration: 1.5,
+        duration: 1,
         ease: "power2.inOut",
       });
     }, 2000);
