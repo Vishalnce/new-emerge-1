@@ -23,8 +23,8 @@ function address() {
             <img src = "/contact/c2.svg" alt ="c1"/>
 
           </div>
-          <div className="w-[75%] flex flex-wrap">
-            <p className="text-center text-  ">connect@emergefishingschool.com</p>
+          <div className=" w-[70%] ">
+            <p className="text text-sm ">hello@emergefinishingschool.com</p>
           </div>
         </div>
         

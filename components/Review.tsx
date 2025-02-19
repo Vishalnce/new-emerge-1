@@ -56,7 +56,7 @@ const Review = () => {
               key={item.name}
             >
               {/* Top section */}
-              <div className="flex flex-col  items-center bg-[#5083C1B2] group-hover:bg-[#5083C1] h-[40%] transition-colors duration-300 rounded-t-2xl ">
+              <div className="flex flex-col  items-center bg-[#5083C1B2] group-hover:bg-[#5083C1] h-[40%] transition-colors duration-300 rounded-t-2xl  ">
                 <div className="w-[28%] m-2 flex justify-center">
                   <img src={item.path} />
                 </div>
