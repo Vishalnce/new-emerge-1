@@ -79,20 +79,20 @@ function Form() {
             
             <Input
               placeholder="Your name"
-              className="mb-4 m-2 p-2   bg-white  focus:outline-none text-xl text-black w-[90%] border-b-4 border-b-white  placeholder:text-slate-300 rounded-lg placeholder-right  shadow-md "
+              className="mb-4 m-2 p-1 pl-3  bg-white  focus:outline-none  text-black w-[90%] border-b-4 border-b-white  placeholder:text-[#00000080] rounded-lg shadow-md "
               {...register("Yourname", { required: true })}
             />
             {/* Input field for "Email" */}
             <Input
               placeholder="Email"
-              className="mb-4 m-2 p-2   bg-white  focus:outline-none text-xl text-black w-[90%]   placeholder:text-slate-300 rounded-lg  shadow-md  "
+              className="mb-4 m-2 p-1  pl-3  bg-white  focus:outline-none  text-black w-[90%]   placeholder:text-[#00000080] rounded-lg  shadow-md  "
               {...register("Email", { required: true })}
             />
             {/* Input field for "Your Message" */}
             <textarea
   placeholder="Your Message"
-  className="mb-4 m-2 p-2 h-[20vh] bg-white focus:outline-none text-xl text-black w-[90%] 
-  shadow-xl placeholder:text-slate-300 text-start pt-2 rounded-lg resize-none"
+  className="mb-4 m-2 p-1 pl-3 h-[20vh] bg-white focus:outline-none  text-black w-[90%] 
+  shadow-xl placeholder:text-[#00000080] text-start pt-2 rounded-lg resize-none"
   {...register("YourMessage", { required: true })}
 />
 
