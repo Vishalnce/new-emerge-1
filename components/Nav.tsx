@@ -38,10 +38,10 @@ const Nav = () => {
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
               onMouseLeave={() => setIsAboutDropdownOpen(false)}
             >
-              <Link href="/about" className="flex items-center">
+              <div  className="flex items-center">
                 <span>About Us</span>
                 <IoIosArrowDown className="ml-1" />
-              </Link>
+              </div>
 
               {isAboutDropdownOpen && (
                 <div className="absolute top-full left-0 bg-white text-black p-2 rounded shadow-md z-10">
@@ -59,10 +59,10 @@ const Nav = () => {
               onMouseEnter={() => setIsExploreDropdownOpen(true)}
               onMouseLeave={() => setIsExploreDropdownOpen(false)}
             >
-              <Link href="/about" className="flex items-center">
+              <div className="flex items-center">
                 <span>Courses</span>
                 <IoIosArrowDown className="ml-1" />
-              </Link>
+              </div>
 
               {isExploreDropdownOpen && (
                 <div className="absolute top-full left-0 bg-white text-black p-2 rounded shadow-md z-10">
