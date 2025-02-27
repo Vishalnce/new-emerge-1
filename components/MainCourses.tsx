@@ -231,8 +231,7 @@ const MainCourses = () => {
 
               <div className=" w-[30%] max-md:w-[95%] m-2  h-auto  ">
                 <p className="text-sm text-[#00000080] pt-8">
-                  Explore Our Courses and Training Programs Tailored to Your
-                  Needs and Start Your Transformation Today!
+                Explore our courses and training programs tailored to your needs, and begin your transformation today with confidence!
                 </p>
               </div>
             </div>
