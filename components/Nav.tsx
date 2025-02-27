@@ -13,7 +13,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center  bg-white text-black  w-[100%] border-b-2 shadow-md z-50 sticky top-0">
+      <div className="flex justify-between items-center  bg-white text-black  w-[100%] border-b-2 shadow-md z-50 sticky max-w-[1400px] mx-auto top-0">
         <div className="flex justify-between items-center  ">
           {/* logo */}
 
@@ -45,11 +45,11 @@ const Nav = () => {
 
               {isAboutDropdownOpen && (
                 <div className="absolute top-full left-0 bg-white text-black p-2 rounded shadow-md z-10">
-                  <Link href="/services" className="block py-1">
-                    <span>Services</span>
+                  <Link href="/about-us" className="block py-1">
+                    <span>Our Team</span>
                   </Link>
-                  <Link href="/courses" className="block py-1">
-                    <span>Courses</span>
+                  <Link href="/gallery" className="block py-1">
+                    <span>Gallery</span>
                   </Link>
                 </div>
               )}
@@ -60,7 +60,7 @@ const Nav = () => {
               onMouseLeave={() => setIsExploreDropdownOpen(false)}
             >
               <Link href="/about" className="flex items-center">
-                <span>Explore</span>
+                <span>Courses</span>
                 <IoIosArrowDown className="ml-1" />
               </Link>
 

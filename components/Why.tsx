@@ -35,14 +35,14 @@ const Why = () => {
 
   return (
     <>
-    <div className="bg-[#FFFAED] h-auto  flex flex-row max-md:flex-col items-center justify-around mx-auto " ref ={whyref } >
+    <div className="bg-[#FFFAED] h-auto  flex flex-row max-md:flex-col items-center justify-around mx-auto  max-w-[1400px] " ref ={whyref } >
     
 
     {/* why to choose Us */}
     <div className='w-[40%] h-auto ml-2 max-md:w-[84%]'>
 
       <div className='m-4'>
-        <p className='text-sm text-left text-[#5083C1]'>
+        <p className='text-lg text-left text-[#5083C1] pb-3'>
         Why Choose us ?
         </p>
         <p className='text-2xl font-bold text-left'>

@@ -44,7 +44,7 @@ const Model = () => {
 
     {/* this */}
       {/* text  */}
-      <div className="bg-[#007A6F] mx-auto h-auto  flex items-center justify-center">
+      <div className="bg-[#5083C1] mx-auto h-auto  flex items-center justify-center  max-w-[1400px] ">
         <p className="text-md text-white text-center p-4">
           Open to Graduates, B.Techs, BBAs, MBAs, Hospitality Management
           students, and all career aspirants!
@@ -53,10 +53,10 @@ const Model = () => {
 
       {/* model */}
 
-      <div className="w-[80%] h-auto mx-auto   " ref={anim}>
+      <div className="w-[80%] h-auto mx-auto  max-w-[1400px]  " ref={anim}>
         {/* heading */}
         <div className="flex flex-col items-center justify-center mt-14 mb-8 ">
-          <div className="text-center text-[#5083C1]">
+          <div className="text-center text-lg text-[#5083C1]">
             <p>Our Success Model</p>
           </div>
 

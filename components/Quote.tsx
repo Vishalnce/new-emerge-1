@@ -3,16 +3,16 @@ import React from 'react'
 const Quote = () => {
   return (
     <>
-    <div className='flex flex-row max-md:flex-col justify-center items-center bg-[#007A6F] w-[100%] mx-auto h-auto gap-4 max-w-[1400px]  pt-7 pb-5 mt-4'>
+    <div className='flex flex-row max-md:flex-col justify-center items-center bg-[#5083C1] w-[100%] mx-auto h-auto gap-4 max-w-[1400px]  pt-7 pb-5 mt-4'>
       {/* images */}
       
 
       <div className='  m-3 w-[30%] max-md:w-[60%]  h-auto flex flex-col items-center'>
         <div>
-          <img src = "/q1.png" className='size-20'></img>
+          <img src = "/q1.png" className=' w-[13rem] h-[15rem]'></img>
         </div>
         <div>
-          <p className='text-lg font-bold text-white text-center tracking-wide '>Sumanta Banerjee</p>
+          <p className='text-lg font-bold text-white text-center tracking-wide pt-3'>Sumanta Banerjee</p>
         </div>
         <div className='w-[80%] text-center'>
           <p className='text:xm '>

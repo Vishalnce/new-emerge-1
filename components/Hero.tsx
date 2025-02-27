@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-[85vw] max-sm:w-[100%] h-auto   md:mx-auto  mb-8  flex justify-between items-center flex-row max-md:flex-col md:mt-6  ">
+      <div className="w-[85vw] max-sm:w-[100%] h-auto   md:mx-auto  mb-8  flex justify-between items-center flex-row max-md:flex-col md:mt-6 max-w-[1400px] mx-auto ">
         {/* information */}
         <div className="flex flex-col  w-[60%] max-md:w-[90%] mb-8 ">
           <div className="m-4">
@@ -33,11 +33,11 @@ const Hero = () => {
               Your Smart start to a <br />
               Corporate Ready
             </p>
-            <p className="text-4xl font-bold text-blue-700">Future</p>
+            <p className="text-4xl font-bold text-[#FF7E06]">Future</p>
           </div>
 
           <div className="m-4">
-            <p className="text-sm text-gray-500">
+            <p className=" text-gray-500">
               We are on a mission to transform college graduates into corporate{" "}
                ready professionals.
             </p>
@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
 
           {/* placement */}
-          <div className="flex flex-row  justify-around items-center mt-4">
+          <div className="flex flex-row  justify-around items-center mt-4 ">
             <div className="flex items-center flex-col m-2">
               <p className="font-bold text-4xl ">66+</p>
               <p className="text-sm text-gray-600 text-center ">Top Universities</p>

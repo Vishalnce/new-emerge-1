@@ -11,7 +11,7 @@ const Courses = () => {
         <div className='flex flex-row justify-between max-md:flex-col'>
           <div className='' >
             <div>
-              <p className=' text-[#5083C1] '>
+              <p className=' text-lg  text-[#5083C1] '>
                 Our courses
               </p>
             </div>

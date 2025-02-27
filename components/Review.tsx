@@ -19,11 +19,11 @@ const Review = () => {
     },
 
     {
-      path: "/review/review3.svg",
+      path: "/review/review4.svg",
       name: "Naivedya Mohanty",
-      add: "Rourkela",
+      add: "Software Engineer",
       review:
-        "Sumant sir: These are the words of a soldier the best thing which will make all of us remember all your hardwork . Keep doing it sir , despite JAG  is your choice , but your hardwork will get you ASTON",
+        "Frankly speaking about its the school and the teachers who taught me to value my own ethics and to speak up with confidence. Thank you so much Sumanta Sir and his team ",
     },
   ];
 
@@ -36,7 +36,7 @@ const Review = () => {
             <img src="/review/a1.svg" className="size-10" />
           </div>
           <div>
-            <p className="text text-center text-[#5083C1]">Our Testimonials</p>
+            <p className="text-lg text-center text-[#5083C1]">Our Testimonials</p>
 
             <p className="text-2xl font-bold text-center ">
               Words from our successfull Graduates

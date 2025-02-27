@@ -4,6 +4,7 @@ import Contact from "@/components/ContactForm/Contact";
 import Address from "@/components/Address"
 
 function Connect() {
+  
   return (
     <>
       <div className="bg-[#FAF9FF] max-w-[1400px] mx-auto pt-4">
