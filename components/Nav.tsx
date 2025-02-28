@@ -75,7 +75,7 @@ const Nav = () => {
                 </div>
               )}
             </div>
-            <Link href="/">
+            <Link href="/contact-us">
               <span>Contact Us</span>
             </Link>
           </div>
@@ -102,8 +102,8 @@ const Nav = () => {
 
         {dropmenu ? <div className='backdrop-blur-sm w-[65%] mx-auto flex justify-center items-center z-10 absolute top-3 left-1/2 transform -translate-x-1/2 lg:hidden'>
         <ul className='flex flex-col items-center gap-4'>
-            <li className='text-xl'>Home</li>
-            <li className='text-xl'> About Us</li>
+            <Link href="/"><li className='text-xl'>Home</li></Link>
+             <Link href="/about-us"><li className='text-xl'> Our Team </li> </Link>
 
             <li className='text-xl'>Explore</li>
 

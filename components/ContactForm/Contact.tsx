@@ -13,7 +13,6 @@ interface FormData {
 }
 
 function Form() {
-  
   const { register, handleSubmit, reset } = useForm<FormData>();
 
   // State to manage the display of the success message
@@ -46,10 +45,8 @@ function Form() {
         reset(); // Reset the form fields to make it blank
         setIsSubmitted(true); // Display the success message
       } else {
-        
       }
     } catch (error) {
-      
       console.error("Error submitting form:", error);
     }
   };
@@ -68,49 +65,44 @@ function Form() {
   return (
     <>
       <div className="relative max-md:mb-[42px]  w-[50%]  max-md:w-[100%] flex flex-col justify-center items-center ">
-        
         <form
           onSubmit={handleSubmit(submit)}
           className="flex flex-col justify-center m-4 w-[100%] h-auto max-md:w-[82%]  mx-auto"
         >
-        
-            {/* Input field for "Your name" */}
+          {/* Input field for "Your name" */}
 
-            
-            <Input
-              placeholder="Your name"
-              className="mb-4 m-2 p-1 pl-3  bg-white  focus:outline-none  text-black w-[90%] border-b-4 border-b-white  placeholder:text-[#00000080] rounded-lg shadow-md "
-              {...register("Yourname", { required: true })}
-            />
-            {/* Input field for "Email" */}
-            <Input
-              placeholder="Email"
-              className="mb-4 m-2 p-1  pl-3  bg-white  focus:outline-none  text-black w-[90%]   placeholder:text-[#00000080] rounded-lg  shadow-md  "
-              {...register("Email", { required: true })}
-            />
-            {/* Input field for "Your Message" */}
-            <textarea
-  placeholder="Your Message"
-  className="mb-4 m-2 p-1 pl-3 h-[20vh] bg-white focus:outline-none  text-black w-[90%] 
+          <Input
+            placeholder="Your name"
+            className="mb-4 m-2 p-1 pl-3  bg-white  focus:outline-none  text-black w-[90%] border-b-4 border-b-white  placeholder:text-[#00000080] rounded-lg shadow-md "
+            {...register("Yourname", { required: true })}
+          />
+          {/* Input field for "Email" */}
+          <Input
+            placeholder="Email"
+            className="mb-4 m-2 p-1  pl-3  bg-white  focus:outline-none  text-black w-[90%]   placeholder:text-[#00000080] rounded-lg  shadow-md  "
+            {...register("Email", { required: true })}
+          />
+          {/* Input field for "Your Message" */}
+          <textarea
+            placeholder="Your Message"
+            className="mb-4 m-2 p-1 pl-3 h-[20vh] bg-white focus:outline-none  text-black w-[90%] 
   shadow-xl placeholder:text-[#00000080] text-start pt-2 rounded-lg resize-none"
-  {...register("YourMessage", { required: true })}
-/>
+            {...register("YourMessage", { required: true })}
+          />
 
-
-            {/* Submit button to send the form data */}
-            <button className=" rounded-full m-3 p-2 w-[40%] max-md:w-[60%] text bg-[#5083C1] text-white py-3">
-              Send Message
-            </button>
-          
+          {/* Submit button to send the form data */}
+          <button className=" rounded-full m-3 p-2 w-[40%] max-md:w-[60%] text bg-[#5083C1] text-white py-3">
+            Send Message
+          </button>
         </form>
 
         {/* Display the success message after submission */}
-        
-        {isSubmitted && (<div className="text-center   left-[4rem]  text-black border-2 rounded-full py-2 px-4 mt-4 ml-2 max-md:text-[13px]">
+
+        {isSubmitted && (
+          <div className="text-center   left-[4rem]  text-black border-2 rounded-full py-2 px-4 mt-4 ml-2 max-md:text-[13px]">
             Your message has been sent
-          </div>)}
-          
-        
+          </div>
+        )}
       </div>
     </>
   );
