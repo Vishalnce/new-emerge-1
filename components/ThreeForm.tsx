@@ -129,13 +129,14 @@ const ThreeForm = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="input-field p-2 rounded-md w-[47%]"
+                className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                 {...register("Name", { required: true })}
+               
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="input-field p-2 rounded-md w-[47%]"
+                className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                 {...register("Email", { required: true })}
               />
             </div>
@@ -144,13 +145,13 @@ const ThreeForm = () => {
               <input
                 type="field"
                 placeholder="Field of Study"
-                className="input-field p-2 rounded-md w-[47%]"
+                className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                 {...register("FieldOfStudy", { required: true })}
               />
               <input
                 type="text"
                 placeholder="Courses Instrested In"
-                className="input-field p-2 rounded-md w-[47%]"
+                className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                 {...register("CourseInterestedIn", { required: true })}
               />
             </div>
@@ -158,7 +159,7 @@ const ThreeForm = () => {
             <input
               type="text"
               placeholder="Organisation"
-              className="input-field p-2 rounded-md"
+              className="input-field p-2 rounded-md focus:outline-none "
               {...register("Organisation", { required: true })}
 
             />
@@ -166,14 +167,14 @@ const ThreeForm = () => {
             <input
               type="text"
               placeholder="How you heard about us?"
-              className="input-field p-2 rounded-md"
+              className=" focus:outline-none input-field p-2 rounded-md"
               {...register("HowYouHeardAboutUs", { required: true })}
 
             />
 
             <textarea
               placeholder="How we can help you "
-              className="input-field p-2 rounded-md"
+              className="input-field p-2 rounded-md focus:outline-none "
               {...register("HowWeCanHelpYou", { required: true })}
 
               rows={3}
@@ -194,13 +195,13 @@ const ThreeForm = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="input-field p-2 rounded-md w-[47%]"
+                className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                 {...register("Name", { required: true })}
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="input-field p-2 rounded-md w-[47%]"
+                className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                 {...register("Email", { required: true })}
               />
             </div>
@@ -209,13 +210,13 @@ const ThreeForm = () => {
               <input
                 type="Field"
                 placeholder="Field of Expertise"
-                className="input-field p-2 rounded-md w-[47%]"
+                className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                 {...register("FieldOfExpertise", { required: true })}
               />
               <input
                 type="text"
                 placeholder="Course You Can Teach"
-                className="input-field p-2 rounded-md w-[47%]"
+                className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                 {...register("CourseYouCanTeach", { required: true })}
               />
             </div>
@@ -223,7 +224,7 @@ const ThreeForm = () => {
             <input
               type="Number"
               placeholder="Year Of Experience"
-              className="input-field p-2 rounded-md"
+              className="input-field p-2 rounded-md focus:outline-none "
               {...register("YearOfExperience", { required: true })}
 
             />
@@ -231,14 +232,14 @@ const ThreeForm = () => {
             <input
               type="text"
               placeholder="How you heard about us?"
-              className="input-field p-2 rounded-md"
+              className="input-field p-2 rounded-md focus:outline-none "
               {...register("HowYouHeardAboutUs", { required: true })}
 
             />
 
             <textarea
               placeholder="How we can help you "
-              className="input-field p-2 rounded-md"
+              className="input-field p-2 rounded-md focus:outline-none "
               {...register("HowWeCanHelpYou", { required: true })}
 
               rows={3}
@@ -258,13 +259,13 @@ const ThreeForm = () => {
              <input
                type="text"
                placeholder="Name"
-               className="input-field p-2 rounded-md w-[47%]"
+               className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                {...register("Name", { required: true })}
              />
              <input
                type="email"
                placeholder="Email"
-               className="input-field p-2 rounded-md w-[47%]"
+               className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                {...register("Email", { required: true })}
              />
            </div>
@@ -273,13 +274,13 @@ const ThreeForm = () => {
              <input
                type="Field"
                placeholder="Business Name"
-               className="input-field p-2 rounded-md w-[47%]"
+               className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                {...register("BusinessName", { required: true })}
              />
              <input
                type="text"
                placeholder=" Business Type"
-               className="input-field p-2 rounded-md w-[47%]"
+               className="input-field p-2 rounded-md w-[47%] focus:outline-none "
                {...register("BusinessType", { required: true })}
              />
            </div>
@@ -287,7 +288,7 @@ const ThreeForm = () => {
            <input
              type="Number"
              placeholder="Year Of Business Experience"
-             className="input-field p-2 rounded-md"
+             className="input-field p-2 rounded-md focus:outline-none "
              {...register("YearOfBusinessExperience", { required: true })}
 
            />
@@ -295,14 +296,14 @@ const ThreeForm = () => {
            <input
              type="text"
              placeholder="How you heard about us?"
-             className="input-field p-2 rounded-md"
+             className="input-field p-2 rounded-md focus:outline-none "
              {...register("HowYouHeardAboutUs", { required: true })}
 
            />
 
            <textarea
              placeholder="How we can help you "
-             className="input-field p-2 rounded-md"
+             className="input-field p-2 rounded-md focus:outline-none "
              {...register("HowWeCanHelpYou", { required: true })}
 
              rows={3}
