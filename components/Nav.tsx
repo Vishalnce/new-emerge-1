@@ -147,21 +147,24 @@ const Nav = () => {
             <ul className="flex flex-col items-center gap-4">
               <Link
                 href="/"
-                
                 className={pathname === "/" ? "text-[#FF7E06]" : ""}
               >
-                <li className="text-xl" onClick={() => setdropmenu((prevState) => !prevState)}>Home</li>
-              </Link>
-              <Link href="/about-us">
                 <li
                   className="text-xl"
                   onClick={() => setdropmenu((prevState) => !prevState)}
-                  
+                >
+                  Home
+                </li>
+              </Link>
+              <Link href="/about-us" className={pathname === "/about-us" ? "text-[#FF7E06]" : ""}>
+                <li
+                  className="text-xl"
+                  onClick={() => setdropmenu((prevState) => !prevState)}
                 >
                   About Us
                 </li>
               </Link>
-              <Link href="/gallery">
+              <Link href="/gallery" className={pathname === "/gallery" ? "text-[#FF7E06]" : ""}>
                 <li
                   className="text-xl"
                   onClick={() => setdropmenu((prevState) => !prevState)}
@@ -169,7 +172,7 @@ const Nav = () => {
                   Gallery
                 </li>
               </Link>
-              <Link href="/soft-skills">
+              <Link href="/soft-skills" className={pathname === "/soft-skills" ? "text-[#FF7E06]" : ""}>
                 <li
                   className="text-xl"
                   onClick={() => setdropmenu((prevState) => !prevState)}
@@ -177,7 +180,7 @@ const Nav = () => {
                   Soft Skills
                 </li>
               </Link>
-              <Link href="/technical-skills">
+              <Link href="/technical-skills" className={pathname === "/technical-skills" ? "text-[#FF7E06]" : ""}>
                 <li
                   className="text-xl"
                   onClick={() => setdropmenu((prevState) => !prevState)}
@@ -185,7 +188,7 @@ const Nav = () => {
                   Technical Skills
                 </li>
               </Link>
-              <Link href="/contact-us">
+              <Link href="/contact-us" className={pathname === "/contact-us" ? "text-[#FF7E06]" : ""}>
                 <li
                   className="text-xl"
                   onClick={() => setdropmenu((prevState) => !prevState)}

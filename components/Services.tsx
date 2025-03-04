@@ -135,7 +135,7 @@ const Services = () => {
               </div>
 
               <div className=" w-[30%] max-md:w-[95%] m-2  h-auto  ">
-                <p className="text-sm text-[#00000080] pt-8">
+                <p className="text-sm text-[#00000080] max-md:pt-0 pt-8">
                   From assessments and psychometric tests that identify your
                   strengths to resume building and meta-skills that highlights
                   your potential.

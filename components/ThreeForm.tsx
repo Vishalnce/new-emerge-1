@@ -108,7 +108,7 @@ const ThreeForm = () => {
               onClick={() =>
                 setActiveTab(type as "Student" | "Educator" | "Partner")
               }
-              className={` rounded-full my-3 p-2 w-[25%]  max-sm:w-[40%] transition-all duration-200 ${
+              className={` max-md:max-w-[30%] rounded-full my-3 p-2 w-[25%]  max-sm:w-[40%] transition-all duration-200 ${
                 activeTab === type
                   ? "bg-[#FF7E06] text-white"
                   : "bg-[#000000] text-white"
