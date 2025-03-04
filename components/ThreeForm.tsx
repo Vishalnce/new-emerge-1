@@ -7,7 +7,7 @@ import conf from "@/conf/conf";
 
 
 const ThreeForm = () => {
-  const [activeTab, setActiveTab] = useState<"Student" | "Tutor" | "Partner">("Student");
+  const [activeTab, setActiveTab] = useState<"Student" | "Educator" | "Partner">("Student");
 
 
   const { register, handleSubmit, reset } = useForm<any>();
@@ -33,7 +33,7 @@ const ThreeForm = () => {
       "How We Can Help You": data.HowWeCanHelpYou,
     };
     }
-    if(activeTab === "Tutor"){
+    if(activeTab === "Educator"){
        formattedData = {
         Name: data.Name,
         Email: data.Email,
@@ -99,19 +99,19 @@ const ThreeForm = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-start min-h-screen    ">
+      <div className="flex flex-col items-center justify-start   max-md:justify-center  ">
         {/* Buttons */}
         <div className="flex flex-row w-[90%]  my-7 justify-between">
-          {["Student", "Tutor", "Partner"].map((type) => (
+          {["Student", "Educator", "Partner"].map((type) => (
             <button
               key={type}
               onClick={() =>
-                setActiveTab(type as "Student" | "Tutor" | "Partner")
+                setActiveTab(type as "Student" | "Educator" | "Partner")
               }
-              className={`border-2  rounded-full my-3 p-2 w-[25%]  max-sm:w-[40%] transition-all duration-200 ${
+              className={` rounded-full my-3 p-2 w-[25%]  max-sm:w-[40%] transition-all duration-200 ${
                 activeTab === type
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-200 text-gray-800"
+                  ? "bg-[#FF7E06] text-white"
+                  : "bg-[#000000] text-white"
               }`}
             >
               {type}
@@ -123,7 +123,7 @@ const ThreeForm = () => {
         {activeTab === "Student" && (
           <form
             onSubmit={handleSubmit(submit)}
-            className="w-[90%]  flex flex-col border-2 border-black justify-around gap-4"
+            className="w-[90%]  flex flex-col  justify-around gap-4"
           >
             <div className="flex flex-row justify-between">
               <input
@@ -185,10 +185,10 @@ const ThreeForm = () => {
           
         )}
 
-        {activeTab === "Tutor" && (
+        {activeTab === "Educator" && (
           <form
             onSubmit={handleSubmit(submit)}
-            className="w-[90%]  flex flex-col border-2 border-black justify-around gap-4"
+            className="w-[90%]  flex flex-col  justify-around gap-4"
           >
             <div className="flex flex-row justify-between">
               <input

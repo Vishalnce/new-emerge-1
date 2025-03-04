@@ -100,7 +100,7 @@ const Services = () => {
 
   return (
     <>
-      <div className="max-w-[1400px] mx-auto  border-2 border-black  w-[100%]">
+      <div className="max-w-[1400px] mx-auto    w-[100%]">
         <div className="">
           <Image
             src={"/courses/h1.png"}
@@ -115,7 +115,7 @@ const Services = () => {
         {/* info */}
 
         <div className="bg-[#FAF9FF]">
-          <div className="w-[90%] border-2 border-yellow-500 flex flex-col   justify-around items-center   mx-auto pt-[4.7rem]">
+          <div className="w-[90%]  flex flex-col   justify-around items-center   mx-auto pt-[4.7rem]">
             <div className="flex flex-row max-md:flex-col justify-around items-center gap-3 w-auto">
               <div className=" w-[36%] max-md:w-[95%] m-2    ">
                 <div className="flex flex-col">

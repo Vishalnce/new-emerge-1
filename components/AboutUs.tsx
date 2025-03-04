@@ -31,7 +31,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="max-w-[1400px] mx-auto  border-2 border-black  w-[100%] ">
+      <div className="max-w-[1400px] mx-auto    w-[100%] ">
         {/* heading Image */}
 
         <div className="">
@@ -47,7 +47,7 @@ const AboutUs = () => {
 
         {/* info */}
 
-        <div className="w-[95%] border-2 border-yellow-500 flex flex-col   justify-around items-center   mx-auto pt-[4.7rem]">
+        <div className="w-[95%]  flex flex-col   justify-around items-center   mx-auto pt-[4.7rem]">
           <div className="flex flex-row max-md:flex-col justify-around items-center  w-auto">
             <div className=" w-[40%] max-md:w-[95%] m-2    ">
               <div className="flex flex-col">
@@ -142,7 +142,7 @@ const AboutUs = () => {
         </div>
 
         {/* gropu pic */}
-        <div className=" w-[95%] mx-auto pb-12 ">
+        <div className=" w-[95%] mx-auto pb-12 my-5">
           <Image
             src={"/about-us/a6.png"}
             alt="About Us Image"
@@ -191,9 +191,9 @@ const AboutUs = () => {
 
         {/* about team member */}
 
-        <div className="bg-[#FFFAED] border-2 border-yellow-400 w-[100%]  ">
+        <div className="bg-[#FFFAED]  w-[100%]  ">
           {/* heading  */}
-          <div className="flex flex-col items-center justify-center py-8 w-[50%] max-md:w-[85%] mx-auto border-2 border-red-700">
+          <div className="flex flex-col items-center justify-center py-8 w-[50%] max-md:w-[85%] mx-auto ">
             <div className="text-center text-[#5083C1]">
               <p>Our Team</p>
             </div>
@@ -212,7 +212,7 @@ const AboutUs = () => {
           </div>
 
           {/* main team member */}
-          <div className="border-2 border-green-800 flex flex-wrap justify-around w-[90%] mx-auto gap-4 pb-8">
+          <div className=" flex flex-wrap justify-around w-[90%] mx-auto gap-4 pb-8">
             {teamInfo.map((item, index) => (
               <div
                 key={index}

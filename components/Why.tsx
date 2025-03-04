@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 
 const Why = () => {
@@ -84,9 +85,11 @@ const Why = () => {
 
         </div>
 
-        <button className="border-2  rounded-full m-3 p-2 w-[30%]  max-sm:w-[40%] text-white text bg-[#5083C1]">
+        <Link href="/contact-us">
+        <button className="  rounded-full m-3 p-2 w-[30%]  max-sm:w-[40%] text-white text bg-[#5083C1]">
               Contact Us
             </button>
+            </Link>
 
 
 

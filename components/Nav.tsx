@@ -26,11 +26,13 @@ const Nav = () => {
           <div className="mx-2 p-2 ">
             {" "}
             {/* Example dimensions */}
+            <Link href="/">
             <img
               src="/logo.svg"
               alt="logo"
               className="w-full h-full object-contain"
             />
+            </Link>
           </div>
 
           {/* nav links */}
@@ -39,6 +41,8 @@ const Nav = () => {
             <Link href="/"  className={pathname === "/" ? "text-red-500" : ""}>
               <span>Home</span>
             </Link>
+
+
             <div // Container for About Us and dropdown
               className="relative flex items-center"
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
@@ -75,7 +79,7 @@ const Nav = () => {
               onMouseLeave={() => setIsExploreDropdownOpen(false)}
             >
               <div className={`flex items-center ${
-            pathname === "/services" || pathname === "/courses"
+            pathname === "/soft-skills" || pathname === "/technical-skills"
               ? "text-red-500"
               : ""
           }`}>
@@ -85,13 +89,13 @@ const Nav = () => {
 
               {isExploreDropdownOpen && (
                 <div className="absolute top-full left-0 bg-white text-black p-2 rounded shadow-md z-10">
-                  <Link href="/services" className={`block py-1 ${
-                pathname === "/services" ? "text-red-500" : ""
+                  <Link href="/soft-skills" className={`block py-1 ${
+                pathname === "/soft-skills" ? "text-red-500" : ""
               }`}>
                     <span>Soft Skills </span>
                   </Link>
-                  <Link href="/courses" className={`block py-1 ${
-                pathname === "/courses" ? "text-red-500" : ""
+                  <Link href="/technical-skills" className={`block py-1 ${
+                pathname === "/technical-skills" ? "text-red-500" : ""
               }`}>
                     <span>Technical Skills</span>
                   </Link>

@@ -72,6 +72,7 @@ const ContactUs = () => {
     <div className=' w-[60%] max-md:w-[100%] h-auto mx-auto'>
       <ThreeForm/>
     </div>
+    
     </div>
       
 

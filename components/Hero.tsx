@@ -2,6 +2,8 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import React, { useRef } from "react";
+import Link from "next/link";
+
 
 const Hero = () => {
   const square = useRef(null);
@@ -45,12 +47,17 @@ const Hero = () => {
 
           {/* button */}
           <div className="flex flex-row justify-start max-sm:justify-center items-center ">
-            <button className="border-2  rounded-full m-3 px-4 py-2   text-sm bg-[#FF7E06]">
+          <Link href="/contact-us">
+            <button  className=" rounded-full m-3 px-4 py-2   text-sm bg-[#FF7E06]">
               Contact Us
-            </button>
+            </button >
+            </Link>
+            
+            <Link href="/technical-skills">
             <button className="border-2  border-black rounded-full  m-3  px-3 py-2 text-sm ">
               See Courses
             </button>
+            </Link>
           </div>
 
           {/* placement */}

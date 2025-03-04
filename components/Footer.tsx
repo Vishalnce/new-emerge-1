@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
 
@@ -21,10 +22,12 @@ const Footer = () => {
 
         {/* nav */}
         <div className='flex flex-row gap-6 mx-4 mt-3'>
-          <p className='font-bold text-sm underline m-2'> About</p>
-          <p className='font-bold text-sm underline m-2'> Contact us</p>
+          <Link href="/about-us"><p className='font-bold text-sm underline m-2'> About-Us</p></Link>
+          
+          <Link href="/contact-us"><p className='font-bold text-sm underline m-2'> Contact us</p></Link>
+          
 
-          <p className='font-bold text-sm underline m-2'> Services</p>
+          
 
         </div>
 
@@ -33,12 +36,16 @@ const Footer = () => {
         {/* icons */}
 
         <div className='flex flex-row gap-3 mx-4 mt-4'>
-          <img src = "/footer/f1.svg"/>
-          <img src = "/footer/f2.svg"/>
-
+          
+          <Link target='_next' href="https://www.linkedin.com/company/emerge-finishing-school/?viewAsMember=true">
           <img src = "/footer/f3.svg"/>
+          </Link>
+          <Link  target='_next' href="https://www.instagram.com/emerge2010/">
           <img src = "/footer/f4.svg"/>
+          </Link>
+          <Link  target='_next' href="https://www.facebook.com/Emerge2010/">
           <img src = "/footer/f5.svg"/>
+          </Link>
 
 
 

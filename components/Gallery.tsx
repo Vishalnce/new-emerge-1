@@ -29,7 +29,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="max-w-[1400px] mx-auto  border-2 border-black  w-[100%]">
+      <div className="max-w-[1400px] mx-auto    w-[100%]">
         {/* heading image */}
 
         <div className="">
@@ -44,7 +44,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Heading  */}
-        <div className="flex flex-col items-center justify-center py-8 w-[50%] max-md:w-[85%] mx-auto border-2 border-red-700">
+        <div className="flex flex-col items-center justify-center py-8 w-[50%] max-md:w-[85%] mx-auto ">
           <div className="text-center text-[#5083C1]">
             <p>Our Gallary</p>
           </div>
