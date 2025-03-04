@@ -1,8 +1,10 @@
 "use client"
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import { useState } from 'react'
 import ThreeForm from './ThreeForm'
+
 
 const ContactUs = () => {
  

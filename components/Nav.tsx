@@ -1,15 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { usePathname } from "next/navigation";
+
+
 
 const Nav = () => {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isExploreDropdownOpen, setIsExploreDropdownOpen] = useState(false);
   const [dropmenu, setdropmenu] = useState(false);
+
+  const pathname = usePathname();
+
 
   return (
     <>
@@ -29,8 +35,8 @@ const Nav = () => {
 
           {/* nav links */}
 
-          <div className="flex justify-between items-center gap-10 m-2 max-lg:hidden ">
-            <Link href="/">
+          <div className="flex  items-center gap-8 m-2 ml-8 max-lg:hidden ">
+            <Link href="/"  className={pathname === "/" ? "text-red-500" : ""}>
               <span>Home</span>
             </Link>
             <div // Container for About Us and dropdown
@@ -38,44 +44,61 @@ const Nav = () => {
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
               onMouseLeave={() => setIsAboutDropdownOpen(false)}
             >
-              <div  className="flex items-center">
+              <div  className={`flex items-center ${
+            pathname.startsWith("/about-us") || pathname === "/gallery"
+              ? "text-red-500"
+              : ""
+          }`}>
                 <span>About Us</span>
                 <IoIosArrowDown className="ml-1" />
               </div>
 
               {isAboutDropdownOpen && (
                 <div className="absolute top-full left-0 bg-white text-black p-2 rounded shadow-md z-10">
-                  <Link href="/about-us" className="block py-1">
+                  <Link href="/about-us" className={`block py-1 ${
+                pathname === "/about-us" ? "text-red-500" : ""
+              }`}>
                     <span>Our Team</span>
                   </Link>
-                  <Link href="/gallery" className="block py-1">
+                  <Link href="/gallery" className={`block py-1 ${
+                pathname === "/gallery" ? "text-red-500" : ""
+              }`}>
                     <span>Gallery</span>
                   </Link>
                 </div>
               )}
             </div>
-            <div // Container for About Us and dropdown
+
+            <div // Container for Course and dropdown
               className="relative flex items-center"
               onMouseEnter={() => setIsExploreDropdownOpen(true)}
               onMouseLeave={() => setIsExploreDropdownOpen(false)}
             >
-              <div className="flex items-center">
+              <div className={`flex items-center ${
+            pathname === "/services" || pathname === "/courses"
+              ? "text-red-500"
+              : ""
+          }`}>
                 <span>Courses</span>
                 <IoIosArrowDown className="ml-1" />
               </div>
 
               {isExploreDropdownOpen && (
                 <div className="absolute top-full left-0 bg-white text-black p-2 rounded shadow-md z-10">
-                  <Link href="/services" className="block py-1">
-                    <span>Services</span>
+                  <Link href="/services" className={`block py-1 ${
+                pathname === "/services" ? "text-red-500" : ""
+              }`}>
+                    <span>Soft Skills </span>
                   </Link>
-                  <Link href="/courses" className="block py-1">
-                    <span>Courses</span>
+                  <Link href="/courses" className={`block py-1 ${
+                pathname === "/courses" ? "text-red-500" : ""
+              }`}>
+                    <span>Technical Skills</span>
                   </Link>
                 </div>
               )}
             </div>
-            <Link href="/contact-us">
+            <Link href="/contact-us" className={pathname === "/contact-us" ? "text-red-500" : ""}>
               <span>Contact Us</span>
             </Link>
           </div>
